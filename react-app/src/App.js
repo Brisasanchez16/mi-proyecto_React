@@ -1,8 +1,8 @@
 import './App.css';
-import ItemListContainer from './components/card/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import './components/Navbar.css'
-import './components/card/Card.css'
+import './components/Card.css'
 
 function App() {
   return (

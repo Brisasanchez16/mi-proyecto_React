@@ -1,5 +1,4 @@
-import{FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import{faCartPlus} from "@fortawesome/free-solid-svg-icons"
+import CartWidget from "./CartWidget";
 
 function NavBar(){
     return(
@@ -11,7 +10,7 @@ function NavBar(){
                     <li>Productos</li>
                     <li>Sobre mi</li>
                     <li>Metodos de pago</li>
-                    <li><FontAwesomeIcon icon={faCartPlus}/></li>
+                    <li><CartWidget/></li>
                 </ul>
             </div>
         </div>
