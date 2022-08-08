@@ -1,0 +1,30 @@
+.itemImg{
+    width: 250px ;
+    border: #404127 solid 5px;
+    grid-column: auto;
+    margin-left: 35%;
+}
+
+.itemNombre{
+    text-align: center;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    grid-row: 2/3;
+    margin-left: 65%;
+}
+
+.itemPrecio{
+    text-align: center;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    grid-row: 3/3;
+    margin-left: 65%;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 20px;
+}

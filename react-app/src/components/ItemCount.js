@@ -13,7 +13,6 @@ function ItemCount (props){
 
     return(
         <>
-        <h3 className="tituloContador">Contador</h3>
         <div className="contador">
             <button onClick={handleDecrement} >-</button>
             <h3 className="click">{clicks}</h3>
