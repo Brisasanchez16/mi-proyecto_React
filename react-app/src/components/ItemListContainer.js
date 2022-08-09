@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ItemCount from "./ItemCount"
 import ItemList from "./itemlist/ItemList"
-import itemData from "./data/data"
+import data from "./data/data"
 
 function getProducts(){
     return new Promise((resolve) => {
-            setTimeout(() => resolve(itemData), 2000) 
+            setTimeout(() => resolve(data), 2000) 
         })
     
 }
