@@ -4,6 +4,7 @@ const data =[
         img: "/images/amatistas.jpeg",
         nombre: "Amatista",
         precio: 450,
+        desc: "La amatista es una piedra que transmite energía positiva, es calmante y ayuda en la meditación. Está considerada como la piedra que ayuda en los problemas relacionados con los dolores de cabeza, cefaleas y migrañas.",
         stock: 5
     },
     {
