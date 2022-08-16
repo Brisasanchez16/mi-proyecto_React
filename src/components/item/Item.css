@@ -1,16 +1,16 @@
 .itemImg{
     width: 250px ;
     border: #404127 solid 5px;
+    margin-left: 60%;
     grid-column: auto;
-    margin-left: 35%;
 }
 
 .itemNombre{
     text-align: center;
     color: beige;
     font-family: 'Times New Roman', Times, serif;
-    grid-row: 2/3;
-    margin-left: 65%;
+    grid-row: 2/2;
+    margin-left: 80%;
 }
 
 .itemPrecio{
@@ -18,13 +18,20 @@
     color: beige;
     font-family: 'Times New Roman', Times, serif;
     grid-row: 3/3;
-    margin-left: 65%;
+    margin-left: 85%;
 }
 
+.itemLink{
+    text-align: center;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    grid-row: 4/4;
+    margin-left: 80%;
+}
 
 .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     text-align: center;
     padding-top: 20px;
 }

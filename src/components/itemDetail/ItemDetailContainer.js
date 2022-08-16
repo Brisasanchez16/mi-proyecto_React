@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
-import data from "../data/data";
-import ItemCount from "../ItemCount";
 import {useParams} from "react-router-dom"
+import dataProducts from "../data/data";
 
 
 const ItemDetailContainer = () => {
@@ -11,11 +10,11 @@ const ItemDetailContainer = () => {
 
     function getProductos() {
         return new Promise((resolve => {
-            let findItem = data.find((element) => element.id == idUrl)
+            let findItem = dataProducts.find((element) => element.id == idUrl)
             setTimeout(() => {
                 resolve(findItem)
-            }, 2000);
-        }));
+            }, 1500);
+        }))
         }
 
     useEffect(() => {

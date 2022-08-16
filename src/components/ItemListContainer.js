@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ItemCount from "./ItemCount"
 import ItemList from "./itemlist/ItemList"
-import data from "./data/data"
 import {useParams} from "react-router-dom"
+import dataProducts from './data/data';
 
 
 function ItemListContainer(){
@@ -11,15 +10,15 @@ function ItemListContainer(){
 
     function getProducts() {
         return new Promise((resolve) => {
-            setTimeout(() => resolve(data), 2000) 
+            setTimeout(() => resolve(dataProducts), 1500) 
         })
-        };
+        }
         
     useEffect(() => {
         getProducts().then((respuesta) => {
-            let itemsFilter = data.filter(element => element.category == idCategory)
+            let itemsFilter = dataProducts.filter(element => element.category == idCategory)
             console.log(data)
-            if(idCategory === undefined){
+            if(idCategory == undefined){
                 setData(respuesta)
             }
             else{
@@ -28,7 +27,7 @@ function ItemListContainer(){
         })
 
     
-}, [])
+}, [idCategory])
 
     return(
         <main>
