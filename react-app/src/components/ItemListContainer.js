@@ -7,7 +7,7 @@ import {useParams} from "react-router-dom"
 
 function ItemListContainer(){
     const [data, setData] = useState([]);
-    const idCategory = useParams().category
+    const idCategory = useParams().idCategory
 
     function getProducts() {
         return new Promise((resolve) => {
