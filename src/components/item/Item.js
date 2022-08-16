@@ -1,6 +1,6 @@
 import React from "react";
 import ItemCount from "../ItemCount";
-import "../item/Item.css"
+import "./Item.css"
 import {Link} from "react-router-dom"
 
 
