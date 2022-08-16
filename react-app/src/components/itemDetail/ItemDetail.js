@@ -12,7 +12,7 @@ function ItemDetail({img, nombre, desc, precio, stock}){
         <h2 className='itemDNombre'>{nombre}</h2>
         <p className='itemDDesc'>{desc}</p>
         <p className='itemDPrecio'>Precio: ${precio}</p>
-        <button className="cont"><ItemCount stock={stock} initial={1}/></button>
+        <div className="contadorD"><ItemCount stock={stock} initial={1} /></div>
         <button className="btnD">Añadir al carrito</button>
         </div>
         </div>

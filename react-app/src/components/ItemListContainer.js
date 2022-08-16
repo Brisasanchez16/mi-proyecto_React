@@ -2,20 +2,29 @@ import React, { useEffect, useState } from 'react'
 import ItemCount from "./ItemCount"
 import ItemList from "./itemlist/ItemList"
 import data from "./data/data"
+import {useParams} from "react-router-dom"
 
-function getProducts(){
-    return new Promise((resolve) => {
-            setTimeout(() => resolve(data), 2000) 
-        })
-    
-}
 
 function ItemListContainer(){
     const [data, setData] = useState([]);
+    const idCategory = useParams().category
 
+    function getProducts() {
+        return new Promise((resolve) => {
+            setTimeout(() => resolve(data), 2000) 
+        })
+        };
+        
     useEffect(() => {
         getProducts().then((respuesta) => {
-            setData(respuesta);
+            let itemsFilter = data.filter(element => element.category == idCategory)
+            console.log(data)
+            if(idCategory === undefined){
+                setData(respuesta)
+            }
+            else{
+                setData(itemsFilter)
+            }
         })
 
     
@@ -31,5 +40,6 @@ function ItemListContainer(){
         </main>
     )
 }
+
 
 export default ItemListContainer 

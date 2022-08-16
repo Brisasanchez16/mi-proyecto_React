@@ -67,3 +67,8 @@
 }
 
 
+.contadorD{
+    grid-row: 4/4;
+    grid-column: 2/2;
+    
+}
