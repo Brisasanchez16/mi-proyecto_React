@@ -11,7 +11,8 @@ function NavBar(){
                     <NavLink to={`category/cristales`}><li>Cristales</li></NavLink>
                     <NavLink to={`category/incienso`}><li>Incienso</li></NavLink>
                     <NavLink to={`category/hierbas`}><li>Hierbas</li></NavLink>
-                    <li><CartWidget/></li>
+                    <NavLink to={`/CartWidget`}><li><CartWidget/></li></NavLink>
+                    
                 </ul>
             </div>
         </div>

@@ -12,7 +12,6 @@ function ItemList({ data }) {
                     id={producto.id}
                     img={producto.img}
                     nombre={producto.nombre}
-                    category={producto.category}
                     precio={producto.precio}
                     stock ={producto.stock}
                 />
