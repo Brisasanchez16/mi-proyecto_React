@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.liN{
+    text-decoration: none;
+    color: beige;
+}
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -25,6 +29,7 @@
     color: beige;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 

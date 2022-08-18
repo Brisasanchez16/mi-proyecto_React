@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function ItemCount ({stock, addToCart}){
+function ItemCount ({stock, addToCart, initial}){
     const[clicks, setClicks] = React.useState(1)
 
     const handleIncrement =() =>{
@@ -9,7 +9,7 @@ function ItemCount ({stock, addToCart}){
     }
     const handleDecrement =() =>{
 
-        clicks > stock ? setClicks(clicks - 1) :  setClicks(clicks - 0)
+        clicks > initial ? setClicks(clicks - 1) :  setClicks(clicks - 0)
     }
 
     return(
