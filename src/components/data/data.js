@@ -23,7 +23,7 @@ const dataProducts =[
         nombre: "Calendula",
         precio: 80,
         desc:"Bolsita de 30 gramos de Calendula! Precio por 1 (UNA) bolsita de hierbas ",
-        stock:5,
+        stock:6,
         category: "hierbas"
     },
     {
