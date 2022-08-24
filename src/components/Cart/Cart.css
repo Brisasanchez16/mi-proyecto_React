@@ -61,3 +61,62 @@
     color: beige;
     text-decoration: none;
 }
+
+.divcart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px;
+}
+
+.titulo{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 25%;
+}
+
+.linkCart{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    text-decoration: none;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 35%;
+}
+
+.removeall{
+    margin-left: 20px;
+}
+
+.resumen{
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.resumencart{
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.totalresume{
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+
+.botonseg{
+    margin-left: 20px;
+}
+
+.botonfin{
+    margin-left: 10px;
+}
+
+.metodos{
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+}

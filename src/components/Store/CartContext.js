@@ -16,12 +16,14 @@ export function CartProvider({ children }) {
         }
         else {
             copyCart.push({ ...data, clicks });
+            data.stock-= clicks
             setCart(copyCart)
             console.log(copyCart)
         }
 
     }
 
+    
     function removeItem(data) {
         const itemRemove = findItem(data.id)
         const indexItem = copyCart.indexOf(itemRemove)
@@ -38,8 +40,14 @@ export function CartProvider({ children }) {
 
     function totalAmount() {
         let amountCart = 0;
-        cart.map(i => amountCart += i.clicks);
+        cart.map(index => amountCart += index.clicks);
         return amountCart;
+    }
+
+    function totalPrice(){
+        let total = 0;
+        cart.map ((index) => total += index.precio * index.clicks);
+        return total;
     }
 
     function isInCart(id) {
@@ -47,10 +55,10 @@ export function CartProvider({ children }) {
     }
 
     function findItem(id){
-        return (copyCart.findIndex(item => item.id === Number(id)))
+        return (copyCart.find(item => item.id === Number(id)))
     }
     return (
-        <cartContext.Provider value={{ cart, addToCart, removeItem, removeAll, totalAmount }}>
+        <cartContext.Provider value={{ cart, addToCart, removeItem, removeAll, totalAmount, totalPrice }}>
             {children}
         </cartContext.Provider>
     );

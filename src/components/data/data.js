@@ -5,7 +5,7 @@ const dataProducts =[
         nombre: "Amatista",
         precio: 450,
         desc: "La amatista es una piedra que transmite energía positiva, es calmante y ayuda en la meditación. Está considerada como la piedra que ayuda en los problemas relacionados con los dolores de cabeza, cefaleas y migrañas.",
-        stock: 5,
+        stock: 25,
         category: "cristales"
     },
     {
@@ -14,7 +14,7 @@ const dataProducts =[
         nombre: "Amazonita",
         precio: 350,
         desc:"La amazonita se asocia al 4º y 5º chakra, en la zona del corazón y la garganta. Es una piedra relajante, refrescante y amorosa. Ayuda a liberar de ataduras y bloqueos, y fomenta el equilibrio emocional y la seguridad en uno mismo. Suele ser de ayuda en situaciones de cambio o duelo.",
-        stock: 7,
+        stock: 30,
         category: "cristales"
     },
     {
@@ -23,7 +23,7 @@ const dataProducts =[
         nombre: "Calendula",
         precio: 80,
         desc:"Bolsita de 30 gramos de Calendula! Precio por 1 (UNA) bolsita de hierbas ",
-        stock:6,
+        stock:20,
         category: "hierbas"
     },
     {
@@ -32,7 +32,7 @@ const dataProducts =[
         nombre: "Romero",
         precio: 50,
         desc:"Bolsita de 30 gramos de Romero! Precio por 1 (UNA) bolsita de hierbas ",
-        stock: 6,
+        stock: 28,
         category: "hierbas"
     },
     {
@@ -41,7 +41,7 @@ const dataProducts =[
         nombre: "Sahumerio Palo santo",
         precio: 400,
         desc:"El Palo Santo se utiliza para expulsar las energías negativas y atraer las energías positivas. Equilibra las energías, buscando y aumentando todo positivo. Ayuda a controlar las enfermedades actuales causadas por el estrés regalando paz y armonía. Eso es debido a sus propiedades de limpieza física y espiritual.",
-        stock: 3,
+        stock: 30,
         category: "incienso"
     },
     {
@@ -50,7 +50,7 @@ const dataProducts =[
         nombre: "Sahumerio de rosas",
         precio: 350,
         desc:"El sahumerio de rosas estimula las facultades sensoperceptivas y hace balancear los flujos de energía entre los chakras al generar un estado de equilibrio que favorece el amor.",
-        stock: 9,
+        stock: 25,
         category: "incienso"
     },
 ]

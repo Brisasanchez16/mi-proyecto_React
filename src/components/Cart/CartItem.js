@@ -4,7 +4,7 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 
 
-function CartItem({img,nombre,precio,clicks, removeItemCart,id}) {
+function CartItem({img,nombre,precio,clicks, removeItemCart,id, total}) {
     return (
 
     <div className='divCart'>
