@@ -1,6 +1,6 @@
 const dataProducts =[
     {
-        id: 1,
+        id: "qVDRundnH8cyMVqj8M9m",
         img: "/images/amatistas.jpeg",
         nombre: "Amatista",
         precio: 450,
@@ -9,7 +9,7 @@ const dataProducts =[
         category: "cristales"
     },
     {
-        id: 2,
+        id: "gfdxtaMU2L0xtF7o7MDa",
         img: "/images/amazonita.jpeg",
         nombre: "Amazonita",
         precio: 350,
@@ -18,7 +18,7 @@ const dataProducts =[
         category: "cristales"
     },
     {
-        id: 3,
+        id: "U5Y1mN4ky49txcKg32ZA",
         img: "/images/calendula.jpeg",
         nombre: "Calendula",
         precio: 80,
@@ -27,7 +27,7 @@ const dataProducts =[
         category: "hierbas"
     },
     {
-        id: 4,
+        id: "J93u74oSae1toNWHz8v6",
         img: "/images/romero.jpeg",
         nombre: "Romero",
         precio: 50,
@@ -36,7 +36,7 @@ const dataProducts =[
         category: "hierbas"
     },
     {
-        id: 5,
+        id: "XHqWL20DV9Edwcv9D2H1",
         img: "/images/sahumerio-palosanto.jpeg",
         nombre: "Sahumerio Palo santo",
         precio: 400,
@@ -45,7 +45,7 @@ const dataProducts =[
         category: "incienso"
     },
     {
-        id: 6,
+        id: "OwdV0w9dwAKB215Y8xRK",
         img: "/images/sahumerio-rosas.jpeg",
         nombre: "Sahumerio de rosas",
         precio: 350,
