@@ -2,6 +2,7 @@ import CartItem from "./CartItem"
 import { useContext } from 'react'
 import { cartContext } from '../Store/CartContext';
 import { Link } from "react-router-dom"
+import UserForm from "../UseForm/UseForm";
 import './Cart.css'
 
 function Cart(id) {
@@ -42,8 +43,7 @@ function Cart(id) {
                     <h3 className="resumencart">Envío: Gratuito</h3>
                     <h2 className="totalresume">Total: $ {totalPrice()}</h2>
                     <div className="botonesresumen">
-                    <Link to={"/"}><button className="botonseg">Seguir Comprando </button></Link>
-                    <Link to={"/checkout"}><button className="botonfin">Finalizar Compra </button></Link>
+                    <UserForm cart={cart}/>
                     </div>
                     <img  className="metodos" src="https://res.cloudinary.com/dveku4pvl/image/upload/v1661110744/mercadopago_logos1_rld5ya.jpg" alt="Metodos de Pago"></img>
 
