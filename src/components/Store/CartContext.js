@@ -10,15 +10,13 @@ export function CartProvider({ children }) {
     function addToCart( data , clicks) {
         if (isInCart(data.id)) {
             const itemIndex = findItem(data.id)
-            copyCart[itemIndex].clicks += clicks;
+            itemIndex.clicks += clicks            
             setCart(copyCart)
-            console.log(copyCart)
         }
         else {
             copyCart.push({ ...data, clicks });
             data.stock-= clicks
             setCart(copyCart)
-            console.log(copyCart)
         }
 
     }
@@ -29,13 +27,11 @@ export function CartProvider({ children }) {
         const indexItem = copyCart.indexOf(itemRemove)
         copyCart.splice(indexItem, 1)
         setCart(copyCart)
-        console.log(copyCart)
     }
 
     function removeAll(){
         copyCart = []
         setCart(copyCart)
-        console.log(copyCart)
     }
 
     function totalAmount() {
@@ -51,11 +47,11 @@ export function CartProvider({ children }) {
     }
 
     function isInCart(id) {
-        return (copyCart.some(itemInCart => itemInCart.id === Number(id)))
+        return (copyCart.some(itemInCart => itemInCart.id === id))
     }
 
     function findItem(id){
-        return (copyCart.find(item => item.id === Number(id)))
+        return (copyCart.find(item => item.id === id))
     }
     return (
         <cartContext.Provider value={{ cart, addToCart, removeItem, removeAll, totalAmount, totalPrice }}>

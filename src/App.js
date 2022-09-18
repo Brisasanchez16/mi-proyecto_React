@@ -3,11 +3,11 @@ import ItemListContainer from './components/Item/ItemListContainer';
 import NavBar from './components/NavBar/NavBar';
 import './components/NavBar/Navbar.css'
 import './components/Card.css'
-import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer'
+import ItemDetailContainer from './components/Item/ItemDetailContainer'
 import{BrowserRouter, Route, Routes} from 'react-router-dom'
 import {CartProvider} from './components/Store/CartContext'
 import Cart from './components/Cart/Cart'
-import firestoreDB from './Services/Firestore';
+import firestoreDB from './services/firebaseConfig';
 import UserForm from './components/UseForm/UseForm';
 
 function App() {

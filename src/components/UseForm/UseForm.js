@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { cartContext } from "../Store/CartContext";
 import { useContext } from 'react';
 import {getDocs, collection, addDoc, query, where,documentId,updateDoc,writeBatch,} from "firebase/firestore";
-import firestoreDB from '../../Services/Firestore'
+import firestoreDB from '../../services/firebaseConfig'
 import '../Cart/Cart.css'
 import Swal from "sweetalert2"
 import dataProducts from "../Data/Data";

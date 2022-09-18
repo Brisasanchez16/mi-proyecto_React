@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ItemList from './ItemList'
 import {useParams} from "react-router-dom"
 import dataProducts from '../Data/Data'
-import firestoreDB from '../../Services/Firestore'
+import firestoreDB from '../../services/firebaseConfig'
 import { getDocs, collection} from 'firebase/firestore'
 
 
@@ -26,11 +26,13 @@ function ItemListContainer(){
         
     useEffect(() => {
         getProducts().then((respuesta) => {
-            let itemsFilter = dataProducts.filter(element => element.category === idCategory)
+            
             if(idCategory === undefined){
+                
                 setData(respuesta)
             }
             else{
+                let itemsFilter = dataProducts.filter(element => element.category === idCategory)
                 setData(itemsFilter)
             }
         })
